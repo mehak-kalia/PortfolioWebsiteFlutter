@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_trial/home/home-page.dart';
+import 'package:portfolio_trial/home/splash-page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +29,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => SplashPage(),
+        "/home": (context) => HomePage()
       },
       initialRoute: "/",
     );
